@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Farm Bee feature.
+ */
+
+include_once 'farm_bee.features.inc';
