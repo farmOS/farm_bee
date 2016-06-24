@@ -11,7 +11,10 @@ DEPENDENCIES
 
 This module depends on the following modules:
 
+ * Ctools (http://drupal.org/project/ctools)
  * Entity API (http://drupal.org/project/entity)
+ * Views (http://drupal.org/project/views)
+ * Views Bulk Operations (http://drupal.org/project/views_bulk_operations)
  * Farm Asset (http://drupal.org/project/farm_asset)
 
 INSTALLATION
