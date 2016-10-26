@@ -22,7 +22,7 @@ function farm_bee_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'farm_asset',
@@ -40,7 +40,7 @@ function farm_bee_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -55,7 +55,7 @@ function farm_bee_field_default_field_instances() {
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_table',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'farm_asset',
@@ -76,7 +76,7 @@ function farm_bee_field_default_field_instances() {
         'progress_indicator' => 'bar',
       ),
       'type' => 'file_generic',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -100,7 +100,7 @@ function farm_bee_field_default_field_instances() {
           'colorbox_node_style_first' => 'large',
         ),
         'type' => 'colorbox',
-        'weight' => 1,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'farm_asset',
@@ -126,7 +126,44 @@ function farm_bee_field_default_field_instances() {
         'progress_indicator' => 'bar',
       ),
       'type' => 'image_image',
-      'weight' => 2,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'farm_asset-bee_colony-field_farm_parent'.
+  $field_instances['farm_asset-bee_colony-field_farm_parent'] = array(
+    'bundle' => 'bee_colony',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Specify the parent(s) of this colony.',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'farm_asset',
+    'field_name' => 'field_farm_parent',
+    'label' => 'Parent(s)',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 256,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 1,
     ),
   );
 
@@ -134,7 +171,9 @@ function farm_bee_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Description');
   t('Files');
+  t('Parent(s)');
   t('Photo(s)');
+  t('Specify the parent(s) of this colony.');
 
   return $field_instances;
 }
