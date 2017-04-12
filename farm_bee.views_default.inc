@@ -107,7 +107,7 @@ function farm_bee_views_default_views() {
   $handler->display->display_options['fields']['id']['id'] = 'id';
   $handler->display->display_options['fields']['id']['table'] = 'farm_asset';
   $handler->display->display_options['fields']['id']['field'] = 'id';
-  $handler->display->display_options['fields']['id']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['id']['label'] = 'Asset ID';
   $handler->display->display_options['fields']['id']['separator'] = '';
   /* Field: Field: Photo(s) */
   $handler->display->display_options['fields']['field_farm_images']['id'] = 'field_farm_images';
