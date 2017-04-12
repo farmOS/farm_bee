@@ -243,6 +243,7 @@ function farm_bee_views_default_views() {
     t('Bee colonies in %1'),
     t('Active'),
     t('Page'),
+  );
 
   /* Display: Data export */
   $handler = $view->new_display('views_data_export', 'Data export', 'views_data_export_1');
