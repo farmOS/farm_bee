@@ -135,7 +135,7 @@ function farm_bee_field_default_field_instances() {
   // Exported field_instance: 'farm_asset-bee_colony-field_farm_parent'.
   $field_instances['farm_asset-bee_colony-field_farm_parent'] = array(
     'bundle' => 'bee_colony',
-    'default_value' => NULL,
+    'default_value' => array(),
     'deleted' => 0,
     'description' => 'Specify the parent(s) of this colony.',
     'display' => array(
@@ -159,13 +159,17 @@ function farm_bee_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'entityreference_view_widget',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 256,
+        'allow_duplicates' => 0,
+        'close_modal' => 1,
+        'pass_argument' => 1,
+        'pass_arguments' => '',
+        'rendered_entity' => 0,
+        'view' => 'farm_asset_entityreference_view|entityreference_view_widget',
+        'view_mode' => 'full',
       ),
-      'type' => 'entityreference_autocomplete',
+      'type' => 'entityreference_view_widget',
       'weight' => 3,
     ),
   );
