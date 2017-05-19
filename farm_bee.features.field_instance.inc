@@ -40,7 +40,7 @@ function farm_bee_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -77,7 +77,7 @@ function farm_bee_field_default_field_instances() {
         'progress_indicator' => 'bar',
       ),
       'type' => 'file_mfw',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -128,7 +128,7 @@ function farm_bee_field_default_field_instances() {
         'progress_indicator' => 'bar',
       ),
       'type' => 'image_miw',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -166,7 +166,7 @@ function farm_bee_field_default_field_instances() {
         'size' => 256,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
