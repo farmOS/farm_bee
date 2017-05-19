@@ -15,6 +15,8 @@ This module depends on the following modules:
  * Ctools (http://drupal.org/project/ctools)
  * Entity API (http://drupal.org/project/entity)
  * Features (http://drupal.org/project/features)
+ * Multiupload Filefield Widget (http://drupal.org/project/multiupload_filefield_widget)
+ * Multiupload Imagefield Widget (http://drupal.org/project/multiupload_imagefield_widget)
  * Openlayers (http://drupal.org/project/openlayers)
  * Strongarm (http://drupal.org/project/strongarm)
  * Views (http://drupal.org/project/views)

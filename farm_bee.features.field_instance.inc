@@ -47,6 +47,7 @@ function farm_bee_field_default_field_instances() {
   // Exported field_instance: 'farm_asset-bee_colony-field_farm_files'.
   $field_instances['farm_asset-bee_colony-field_farm_files'] = array(
     'bundle' => 'bee_colony',
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -71,11 +72,11 @@ function farm_bee_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'file',
+      'module' => 'multiupload_filefield_widget',
       'settings' => array(
         'progress_indicator' => 'bar',
       ),
-      'type' => 'file_generic',
+      'type' => 'file_mfw',
       'weight' => 4,
     ),
   );
@@ -83,6 +84,7 @@ function farm_bee_field_default_field_instances() {
   // Exported field_instance: 'farm_asset-bee_colony-field_farm_images'.
   $field_instances['farm_asset-bee_colony-field_farm_images'] = array(
     'bundle' => 'bee_colony',
+    'default_value' => array(),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -120,12 +122,12 @@ function farm_bee_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'multiupload_imagefield_widget',
       'settings' => array(
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'bar',
       ),
-      'type' => 'image_image',
+      'type' => 'image_miw',
       'weight' => 3,
     ),
   );
