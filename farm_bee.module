@@ -179,3 +179,12 @@ function farm_bee_views_post_render(&$view, &$output, &$cache) {
     }
   }
 }
+
+/**
+ * Implements hook_farm_log_categories().
+ */
+function farm_bee_farm_log_categories() {
+
+  // Provide an "Bees" log category.
+  return array('Bees');
+}
