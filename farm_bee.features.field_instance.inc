@@ -107,7 +107,7 @@ function farm_bee_field_default_field_instances() {
     ),
     'entity_type' => 'farm_asset',
     'field_name' => 'field_farm_images',
-    'label' => 'Photo(s)',
+    'label' => 'Photos',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -179,7 +179,7 @@ function farm_bee_field_default_field_instances() {
   t('Description');
   t('Files');
   t('Parent(s)');
-  t('Photo(s)');
+  t('Photos');
   t('Specify the parent(s) of this colony.');
 
   return $field_instances;
