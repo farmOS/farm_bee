@@ -1,7 +1,7 @@
 name = Farm Bee
 description = Features for beekeeping.
 core = 7.x
-package = farmOS
+package = farmOS Contrib
 dependencies[] = colorbox
 dependencies[] = ctools
 dependencies[] = entity
