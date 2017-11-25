@@ -26,7 +26,6 @@ This module depends on the following modules:
  * Views Bulk Operations (http://drupal.org/project/views_bulk_operations)
  * Farm Asset (http://drupal.org/project/farm_asset)
  * Farm Fields (http://drupal.org/project/farm_fields)
- * Farm Log (http://drupal.org/project/farm_log)
 
 INSTALLATION
 ------------
