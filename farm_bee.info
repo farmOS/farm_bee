@@ -21,7 +21,6 @@ dependencies[] = image
 dependencies[] = list
 dependencies[] = multiupload_filefield_widget
 dependencies[] = multiupload_imagefield_widget
-dependencies[] = openlayers
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = text
