@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - farm_bee
+id: bee_colony
+label: Bee colony
+description: ''
+workflow: asset_default
+new_revision: true
