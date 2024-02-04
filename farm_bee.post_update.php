@@ -5,8 +5,6 @@
  * Post update hooks for the farm_bee module.
  */
 
-use Drupal\migrate_plus\Entity\Migration;
-
 /**
  * Uninstall v1 migration config.
  */
