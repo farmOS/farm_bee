@@ -6,11 +6,10 @@
  */
 
 /**
- * Uninstall v1 migration config.
+ * Implements hook_removed_post_updates().
  */
-function farm_bee_post_update_uninstall_v1_migration(&$sandbox) {
-  $config = \Drupal::configFactory()->getEditable('migrate_plus.migration.farm_migrate_asset_bee_colony');
-  if (!empty($config)) {
-    $config->delete();
-  }
+function farm_bee_removed_post_updates() {
+  return [
+    'farm_bee_post_update_uninstall_v1_migration' => '3.x',
+  ];
 }
